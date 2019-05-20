@@ -1,0 +1,10 @@
+<app-header (pageTypeSelected)="onPageTypeSelected($event)"></app-header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-recipes *ngIf="pageType === 'recipes'"></app-recipes>
+      <app-shopping-list *ngIf="pageType === 'shoppingList'"></app-shopping-list>
+    </div>
+  </div>
+</div>
